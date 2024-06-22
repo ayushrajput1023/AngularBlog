@@ -1,0 +1,60 @@
+
+@if(postById)
+{
+    <div class="container posttile">
+        <div class="row">
+            <div class="col col-lg-10">
+                <h3>{{ postById.id }}. {{ postById.title }}</h3>
+                <p>{{ postById.content }}</p>
+                Size : {{ postById.page }}
+            </div>
+            <div class="col col-lg-2 editIcon">
+                <a class="editLinks" routerLink='/details/{{postById.id}}'><i class="fa-regular fa-eye"></i></a> | 
+                <a class="editLinks" routerLink='/update/{{postById.id}}'><i class="fa-solid fa-pen"></i></a> | 
+                <a class="editLinks" routerLink='/delete/{{postById.id}}'><i class="fa-solid fa-trash-can"></i></a>
+            </div>
+        </div>
+    </div>
+}
+@else if(postsByName) {
+    
+    @for(items of postsByName; track items)
+{
+    <div class="container posttile">
+        <div class="row">
+            <div class="col col-lg-10">
+                <h3>{{ items.id }}. {{ items.title }}</h3>
+                <p>{{ items.content }}</p>
+                Size : {{ items.page }}
+            </div>
+            <div class="col col-lg-2 editIcon">
+                <a class="editLinks" routerLink='/details/{{items.id}}'><i class="fa-regular fa-eye"></i></a> | 
+                <a class="editLinks" routerLink='/update/{{items.id}}'><i class="fa-solid fa-pen"></i></a> | 
+                <a class="editLinks" routerLink='/delete/{{items.id}}'><i class="fa-solid fa-trash-can"></i></a>
+            </div>
+        </div>
+    </div>
+}
+
+}
+@else {
+
+    @for(item of allPosts; track item)
+{
+    <div class="container posttile">
+        <div class="row">
+            <div class="col col-lg-10">
+                <h3>{{ item.id }}. {{ item.title }}</h3>
+                <p>{{ item.content }}</p>
+                Size : {{ item.page }}
+            </div>
+            <div class="col col-lg-2 editIcon">
+                <a class="editLinks" routerLink='/details/{{item.id}}'><i class="fa-regular fa-eye"></i></a> | 
+                <a class="editLinks" routerLink='/update/{{item.id}}'><i class="fa-solid fa-pen"></i></a> | 
+                <a class="editLinks" routerLink='/delete/{{item.id}}'><i class="fa-solid fa-trash-can"></i></a>
+            </div>
+        </div>
+    </div>
+}
+
+}

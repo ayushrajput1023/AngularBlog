@@ -1,0 +1,23 @@
+<br><br>
+<div class="container jumbotron">
+    <div>
+        <h2 class="display-4">Create New Post</h2>
+        <br>
+    <form class="form-group" (ngSubmit)="onAddingPost(a)" #a="ngForm">
+        <label for="">Enter Post Title : </label>
+        <input class="form-control form-control-lg" type="text" 
+        placeholder="Please Enter Post Title" required [maxLength]="10" ngModel name="postTitle">
+        <br>
+        <label for="">Enter Post Content : </label>
+        <textarea class="form-control form-control-lg" type="text-area" 
+        placeholder="Please Enter Post Content" required [maxLength]="211" ngModel name="postContent"></textarea>
+        <br>
+        <label for="">Enter Post Page : </label>
+        <input class="form-control form-control-lg" type=number 
+        placeholder="Please Enter Post Page" required ngModel name="postPage">
+        <br><br><br>
+        <button type="button" class="btn btn-gray btn-lg" (click)="onBack()" >Back</button>
+        <button class="btn btn-lg btn-primary mybtn" [disabled]="a.invalid">Add</button>
+    </form>
+    </div>
+</div>

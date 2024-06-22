@@ -1,0 +1,33 @@
+
+nav{
+    border-radius: 0;
+}
+
+.navLink {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headingfont{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: -8px;
+}
+
+.linkfont{
+    font-size: larger;
+    font-weight: bolder;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    list-style: none;
+  }
+
+  a:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

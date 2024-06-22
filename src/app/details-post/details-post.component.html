@@ -1,0 +1,17 @@
+<br><br>
+@if(detailsPost){
+    <div class="container jumbotron">
+        <div>
+            <h2 class="display-4">Post Details</h2>
+            <br>
+            <div>
+                <p><label for="">Post Id :</label> {{detailsPost.id}}</p>               
+                <p><label for="">Post Title :</label> {{detailsPost.title}}</p>           
+                <p><label for="">Post Content :</label> {{detailsPost.content}}</p>
+                <p><label for="">Post Page :</label> {{detailsPost.page}}</p>
+            </div>
+            <br><br><br>
+            <button class="btn btn-gray btn-lg" routerLink="">Back</button>
+        </div>
+    </div>
+}

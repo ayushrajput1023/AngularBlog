@@ -1,0 +1,16 @@
+<br><br>
+<div class="container jumbotron">
+    <div>
+        <h2 class="display-4">Edit Post Title</h2>
+        <br>
+    <form class="form-group" (ngSubmit)="onUpdateTitleById(u)" #u="ngForm">
+        <label for="">Enter Post New Title : </label>
+        <input class="addField form-control form-control-lg" type="text" 
+        placeholder="Please Enter Post New Title" required [maxLength]="10" ngModel name="postTitle">
+        <br><br><br>
+        <button class="btn btn-gray btn-lg" routerLink="">Back</button>
+        <button class="btn btn-success btn-lg mybtn" [disabled]="u.invalid">Add</button>
+    </form>
+
+    </div>
+</div>

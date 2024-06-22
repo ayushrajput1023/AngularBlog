@@ -1,0 +1,30 @@
+
+.posttile
+{
+    background-color: #A7E6FF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.posttile:hover{
+    background-color: #3ABEF9;
+}
+
+.editIcon{
+    padding-top: 55px;
+}
+
+.editLinks
+{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.editLinks:hover{
+    color: white;
+}
